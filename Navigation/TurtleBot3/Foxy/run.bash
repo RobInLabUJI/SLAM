@@ -7,4 +7,4 @@ rocker --env TURTLEBOT3_MODEL=${1:-burger} \
          turtlebot3_navigation2 \
          navigation2.launch.py \
          use_sim_time:=True \
-         map:=/root/map.yaml
+         map:=/root/${2:-map}.yaml
