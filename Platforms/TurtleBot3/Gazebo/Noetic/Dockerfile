@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y \
       ros-noetic-gazebo-plugins && \
     rm -rf /var/lib/apt/lists/*
 
+ADD turtlebot3.yaml /root
+
 ENV TURTLEBOT3_MODEL=burger
 
 CMD ["roslaunch", "turtlebot3_gazebo", \
