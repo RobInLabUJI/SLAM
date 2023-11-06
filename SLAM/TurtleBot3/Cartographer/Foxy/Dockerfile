@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 ENV TURTLEBOT3_MODEL=burger
 
-CMD ["ros2", "run", \
+CMD ["ros2", "launch", \
      "turtlebot3_cartographer", \
      "cartographer.launch.py", \
      "use_sim_time:=True"]
