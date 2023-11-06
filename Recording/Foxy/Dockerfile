@@ -1,4 +1,4 @@
-FROM osrf/ros:foxy-desktop
+FROM ros:foxy-ros-base
 
 ENV DEBIAN_FRONTEND=noninteractive
 
